@@ -11,11 +11,11 @@ partNum=float(a*(a-1))
 
 #ітераційний цикл знаходження суми з умовою зупинки
 while (abs(frac)>10**-5):
-    partNum*=(a-(k+1))
-    den=den*k
-    frac=(partNum*x**k)/den
-    sum+=frac
-    k+=1
+    partNum*=(a-(k+1))          #частина чисельника
+    den=den*k                   #знаменник
+    frac=(partNum*x**k)/den     #дріб
+    sum+=frac                   #сума
+    k+=1                        #лічильник 
 
 #виведення результатів
-print('\nsum = ',round(sum,5))
+print('\nsum = ',sum)
