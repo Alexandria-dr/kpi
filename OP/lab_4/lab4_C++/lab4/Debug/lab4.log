@@ -1,3 +1,4 @@
-﻿  lab4.cpp
-C:\Users\HP\Documents\github-projects\kpi\OP\lab_4\lab4\lab4\lab4.cpp(22,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  lab4.vcxproj -> C:\Users\HP\Documents\github-projects\kpi\OP\lab_4\lab4\Debug\lab4.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (lab4.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  lab4.cpp
+C:\Users\HP\Documents\github-projects\kpi\OP\lab_4\lab4_C++\lab4\lab4.cpp(22,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  lab4.vcxproj -> C:\Users\HP\Documents\github-projects\kpi\OP\lab_4\lab4_C++\Debug\lab4_C++.exe

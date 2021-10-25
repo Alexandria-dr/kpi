@@ -1,0 +1,3 @@
+﻿  lab4.cpp
+C:\Users\HP\Documents\github-projects\kpi\OP\lab_4\lab4_C++\lab4\lab4.cpp(22,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  lab4.vcxproj -> C:\Users\HP\Documents\github-projects\kpi\OP\lab_4\lab4_C++\x64\Debug\lab4_C++.exe

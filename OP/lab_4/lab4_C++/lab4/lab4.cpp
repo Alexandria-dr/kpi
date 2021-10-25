@@ -11,7 +11,7 @@ int main()
 
     using namespace std;
 
-    cout << "¬ведiть кiлькiсть елементiв послiдовностi n=";
+    cout << "¬ведiть натуральну кiлькiсть елементiв послiдовностi n=";
     cin >> n;
     cout << "¬ведiть x=";
     cin >> x;
@@ -23,3 +23,4 @@ int main()
         cout << "n=" << i << "; an=" << a << endl;   //виведенн€ елементу
     }
 }
+
