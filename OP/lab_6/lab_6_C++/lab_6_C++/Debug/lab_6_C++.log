@@ -1,0 +1,4 @@
+﻿  lab_6_C++.cpp
+C:\Users\HP\Documents\github-projects\kpi\OP\lab_6\lab_6_C++\lab_6_C++\lab_6_C++.cpp(15,50): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\HP\Documents\github-projects\kpi\OP\lab_6\lab_6_C++\lab_6_C++\lab_6_C++.cpp(26,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  lab_6_C++.vcxproj -> C:\Users\HP\Documents\github-projects\kpi\OP\lab_6\lab_6_C++\Debug\lab_6_C++.exe
