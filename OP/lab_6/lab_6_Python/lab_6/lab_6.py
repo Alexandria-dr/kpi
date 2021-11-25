@@ -1,20 +1,18 @@
 import math
-
-def Taylor(x,ep,y):
+ 
+def Taylor(x,ep):           # Функція
+    y = 1 if x>0 else 2    #знаходження у тернарними операторами 
+    x = math.atan(x) if x>0 else pow(x,2)   #знаходження х тернарними операторами
     i = 1
     franc = 1
     fact = 1
-    y=1+y
-    while (abs(franc) > 10**-ep):
+    while (abs(franc) > 10**-ep):    #цикл з передумовою 
         fact*=i
         franc = pow(x, i)/fact
         i += 1
         y += franc
-    return y
+    return y  #повернення значення у функцією 
 
-x = int(input('введіть значення х: '))
-ep = int(input('введіть точність: '))
-if x > 0:
-    print('значення у = %.*f '%(ep,Taylor(math.atan(x),ep,0)))
-else:
-    print('значення у = %.*f '%(ep,Taylor(pow(x,2),ep,1)))
+x = float(input('введіть значення х: '))     #введення чисел
+ep = int(input('введіть цілу точність: '))
+print('значення у = %.*f '%(ep,Taylor(x,ep)))   #виведення результату
