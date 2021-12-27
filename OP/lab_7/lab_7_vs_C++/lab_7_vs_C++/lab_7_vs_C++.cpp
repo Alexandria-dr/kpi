@@ -4,79 +4,80 @@
 using namespace std;
 
 //прототипи функцій
-float* inputArray(int); //генерація масиву
-void outputArray(float*, int); //виведення масиву
-int findMin(float*, int); //знаходження мінімального значення в масиві
-float sum(float*, int, float); //обчислення значення s
-void replacement(float*,int,float, int);//заміна значень більших за k на s
+void inputArray(int,float*); //генерація масиву
+void outputArray(int); //виведення масиву
+float findMin( int); //знаходження мінімального значення в масиві
+float sum( int, float); //обчислення значення s
+void replacement(int,float, int);//заміна значень більших за k на s
+float* pA;
 
 int main()
 {
     int n, //розмірність масиву А
         k; 
-    float * pA,  //покажчик на масив А
+    float   //покажчик на масив А
            aMin,//мінімальне значення масиву А
            s; //шукане значення s
     cout << setprecision(2) << fixed;
     cout << "natural number k: "; cin >> k;
     cout << "Size of array A" << ":"; cin >> n;
-    pA = inputArray(n); 
-    cout <<endl<< "Array A:"<<endl; outputArray(pA, n);
-    aMin = findMin(pA, n);
+    inputArray(n,pA); 
+    cout <<endl<< "Array A:"<<endl; outputArray(n);
+    aMin = findMin(n);
     cout <<endl<< "Min element of array A:" << aMin << endl;
-    s = sum(pA, n, aMin);
+    s = sum(n, aMin);
     cout <<endl<< "s = " << s<< endl;
-    replacement(pA,k,s,n);
-    cout <<endl<< "Result:" << endl; outputArray(pA, n);
+    replacement(k,s,n);
+    cout <<endl<< "Result:" << endl; outputArray( n);
     delete[] pA;
 }
 
 //==========генерація масиву==========
-float* inputArray(int size) { 
+void inputArray(int size, float* ) { 
     srand(time(NULL));
-    float* arr = new float[size]; //виділення пам'яті в heap-області і збереження її адреси в локальному покажчику
+    pA = new float[size]; //виділення динамічної пам'яті і збереження її адреси в локальному покажчику
     for (int i = 0; i < size; i++)
-        arr[i] = ((rand() % 201 - 100)+((rand() % 100 + 1)/(float)100)) ; //ініціалізація елементів
-    return arr; //повернення покажчика динамічного масиву
+        pA[i] = ((rand() % 201 - 100)+((rand() % 100 + 1)/(float)100)) ; //ініціалізація елементів
+     
 }
 
 //==========виведення масиву==========
-void outputArray(float* arr, int size) {
+void outputArray( int size) {
     for (int i = 0; i < size; i++)
-        cout << setw(8) << arr[i];
+        cout << setw(8) << pA[i];
     cout << endl;
 }
 
 //=====знаходження мінімального значення в масиві=====
-int findMin(float* arr, int size) {
-    int min = arr[0];
+float findMin( int size) {
+    float min = pA[0];
     for (int i = 0; i < size; i++) {
-        if (arr[i] < min) min = arr[i];
+        if (pA[i] < min) min = pA[i];
     }
     return min;
 }
 
 //==========обчислення значення s==========
-float sum(float* arr, int size, float min) {
+float sum(int size, float min) {
     float s=0;
     if (min == 0) {
         for (int i = 0; i < size; i++) {
-            s += arr[i] * arr[i];
+            s += pA[i] * pA[i];
         }
     }
     else {
         for (int i = 0; i < size; i++) {
-            s += arr[i] / min;
+            s += pA[i] / min;
         }
     }
     return s;
 }
 
 //==========заміна значень більших за k на s==========
-void replacement(float* arr, int k, float s,int size) {
+void replacement( int k, float s,int size) {
     for (int i = 0; i < size; i++) {
-        if (arr[i] > k) {
-            arr[i] = s;
+        if (pA[i] > k) {
+            pA[i] = s;
         }
     }
 }

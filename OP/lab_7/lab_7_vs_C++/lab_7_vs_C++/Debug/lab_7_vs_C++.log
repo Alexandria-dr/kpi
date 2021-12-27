@@ -1,6 +1,3 @@
 ﻿  lab_7_vs_C++.cpp
-C:\Users\HP\Documents\github-projects\kpi\OP\lab_7\lab_7_vs_C++\lab_7_vs_C++\lab_7_vs_C++.cpp(25,19): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\HP\Documents\github-projects\kpi\OP\lab_7\lab_7_vs_C++\lab_7_vs_C++\lab_7_vs_C++.cpp(36,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\HP\Documents\github-projects\kpi\OP\lab_7\lab_7_vs_C++\lab_7_vs_C++\lab_7_vs_C++.cpp(52,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\HP\Documents\github-projects\kpi\OP\lab_7\lab_7_vs_C++\lab_7_vs_C++\lab_7_vs_C++.cpp(54,38): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\HP\Documents\github-projects\kpi\OP\lab_7\lab_7_vs_C++\lab_7_vs_C++\lab_7_vs_C++.cpp(37,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   lab_7_vs_C++.vcxproj -> C:\Users\HP\Documents\github-projects\kpi\OP\lab_7\lab_7_vs_C++\Debug\lab_7_vs_C++.exe

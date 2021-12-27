@@ -8,15 +8,18 @@ int ep, x;
 
 int main()
 {
-   
+    
     cout << "input x: "; cin >> x;          //введення
     cout << "\ninput epsilon: "; cin >> ep;
+
+    cout << "&Global ep = " << &ep << "   x = " << &x<<endl;
 
     printf("\ny = %.*f\n", ep, Taylor((x), ep));   //виведення 
     cout << "after:" << endl << x << ep;
 }
 
 float Taylor(float x, int ep) {     //функція
+    cout << "&Local ep = " << &ep << "   x = " << &x<<endl;
     float y=0; 
     (x > 0) ? x = atan(x) : (x = pow(x, 2), y = 1);   //умова з тернарними операторами 
     float fact = 1;
