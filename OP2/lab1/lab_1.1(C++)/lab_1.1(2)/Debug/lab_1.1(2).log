@@ -1,0 +1,5 @@
+﻿  lib.cpp
+E:\1kpi\prog_tests\C++\2nd\lab_1.1(2)\lab_1.1(2)\lib.cpp(50,23): warning C4018: '<': signed/unsigned mismatch
+E:\1kpi\prog_tests\C++\2nd\lab_1.1(2)\lab_1.1(2)\lib.cpp(69,27): warning C4018: '<': signed/unsigned mismatch
+E:\1kpi\prog_tests\C++\2nd\lab_1.1(2)\lab_1.1(2)\lib.cpp(89,23): warning C4018: '<': signed/unsigned mismatch
+  lab_1.1(2).vcxproj -> E:\1kpi\prog_tests\C++\2nd\lab_1.1(2)\Debug\lab_1.1(2).exe

@@ -1,0 +1,3 @@
+python [ 6 ]
+hello world [ 10 ]
+my name is sasha [ 13 ]
