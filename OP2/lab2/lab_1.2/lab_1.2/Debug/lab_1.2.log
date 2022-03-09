@@ -1,0 +1,3 @@
+﻿  lib.cpp
+E:\1kpi\prog_tests\C++\2nd\lab_1.2\lab_1.2\lib.cpp(43,9): warning C4101: 'i': unreferenced local variable
+  lab_1.2.vcxproj -> E:\1kpi\prog_tests\C++\2nd\lab_1.2\Debug\lab_1.2.exe
