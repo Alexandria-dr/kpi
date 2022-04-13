@@ -1,0 +1,10 @@
+﻿  Line.cpp
+C:\Users\HP\Documents\github-projects\kpi\OP2\lab3\lab_3\lab_3\Line.cpp(7,7): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\HP\Documents\github-projects\kpi\OP2\lab3\lab_3\lab_3\Line.cpp(8,7): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\HP\Documents\github-projects\kpi\OP2\lab3\lab_3\lab_3\Line.cpp(9,7): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  lib.cpp
+C:\Users\HP\Documents\github-projects\kpi\OP2\lab3\lab_3\lab_3\lib.cpp(23,24): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\HP\Documents\github-projects\kpi\OP2\lab3\lab_3\lab_3\lib.cpp(51,24): warning C4018: '<=': signed/unsigned mismatch
+  source.cpp
+  Generating Code...
+  lab_3.vcxproj -> C:\Users\HP\Documents\github-projects\kpi\OP2\lab3\lab_3\Debug\lab_3.exe

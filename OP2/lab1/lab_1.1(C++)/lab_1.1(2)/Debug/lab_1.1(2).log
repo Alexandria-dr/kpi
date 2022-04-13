@@ -1,5 +1,7 @@
 ﻿  lib.cpp
-E:\1kpi\prog_tests\C++\2nd\lab_1.1(2)\lab_1.1(2)\lib.cpp(50,23): warning C4018: '<': signed/unsigned mismatch
-E:\1kpi\prog_tests\C++\2nd\lab_1.1(2)\lab_1.1(2)\lib.cpp(69,27): warning C4018: '<': signed/unsigned mismatch
-E:\1kpi\prog_tests\C++\2nd\lab_1.1(2)\lab_1.1(2)\lib.cpp(89,23): warning C4018: '<': signed/unsigned mismatch
-  lab_1.1(2).vcxproj -> E:\1kpi\prog_tests\C++\2nd\lab_1.1(2)\Debug\lab_1.1(2).exe
+C:\Users\HP\Documents\github-projects\kpi\OP2\lab1\lab_1.1(C++)\lab_1.1(2)\lib.cpp(50,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\HP\Documents\github-projects\kpi\OP2\lab1\lab_1.1(C++)\lab_1.1(2)\lib.cpp(69,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\HP\Documents\github-projects\kpi\OP2\lab1\lab_1.1(C++)\lab_1.1(2)\lib.cpp(89,23): warning C4018: '<': signed/unsigned mismatch
+  source.cpp
+  Generating Code...
+  lab_1.1(2).vcxproj -> C:\Users\HP\Documents\github-projects\kpi\OP2\lab1\lab_1.1(C++)\Debug\lab_1.1(2).exe
