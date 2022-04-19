@@ -9,20 +9,15 @@ Line::Line(double a, double b, double c) {
 	c_ = c;
 }
 
-//======вивід прямої в консоль=====
-void Line::GetMyLine() {
-	if(b_>0&&c_>0){
-		cout << a_ << "x+" << b_ << "y+" << c_ << "=0" << endl;
-	}
-	else if (b_ < 0 && c_ < 0) {
-		cout << a_ << "x" << b_ << "y" << c_ << "=0" << endl;
-	}
-	else if (b_ < 0 && c_>0) {
-		cout << a_ << "x" << b_ << "y+" << c_ << "=0" << endl;
-	}
-	else {
-		cout << a_ << "x+" << b_ << "y" << c_ << "=0" << endl;
-	}
+//======гетери======
+double Line::GetA() {
+	return a_;
+}
+double Line::GetB() {
+	return b_;
+}
+double Line::GetC() {
+	return c_;
 }
 
 //======перевірка чи належить точка прямій=====

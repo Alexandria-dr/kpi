@@ -9,8 +9,8 @@ vector<Line> fillArray() {
 		cout << "\na = ";  cin >> a;
 		cout << "b = ";  cin >> b;
 		cout << "c = ";  cin >> c;
-		Line *ln=new Line(a, b, c);
-		lines.push_back(*ln);   
+		Line ln=Line(a, b, c);
+		lines.push_back(ln);   
 		cout << "продовжити? (т/н) ";
 		cin >> flag;
 	}
@@ -20,9 +20,24 @@ vector<Line> fillArray() {
 //======видедення прямих в консоль=====
 void outputL(vector<Line> lines) {
 	cout << "\nвведені прямі:" << endl;
+	double a, b, c;
 	for (int i = 0; i + 1 <= lines.size(); i++) {
+		a = lines[i].GetA();
+		b = lines[i].GetB();
+		c = lines[i].GetC();
 		cout << "пряма " << (i + 1)<<" : ";
-		lines[i].GetMyLine();
+		if (b >= 0 && c >= 0) {
+			cout << a << "x+" << b << "y+" << c << "=0" << endl;
+		}
+		else if (b < 0 && c < 0) {
+			cout << a << "x" << b << "y" << c << "=0" << endl;
+		}
+		else if (b < 0 && c>=0) {
+			cout << a << "x" << b << "y+" << c << "=0" << endl;
+		}
+		else {
+			cout << a << "x+" << b << "y" << c << "=0" << endl;
+		}
 	}
 }
 
